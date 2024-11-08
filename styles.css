@@ -58,6 +58,7 @@
     align-items: center;
     justify-content: center;
   }
+
   
   .column-left {
     max-width: 600px;
@@ -92,5 +93,9 @@
     font-weight: bold;
     color: var(--secondary-color);
     margin-bottom: 0.5em;
+  }
+
+  ul {
+    list-style-type: '-';
   }
   
