@@ -101,7 +101,7 @@
   }
   
   .dashed-list li::before {
-    content: "-";
+    content: " - ";
     margin-right: 0.5rem;
     color: var(--secondary-color);
   }
@@ -114,7 +114,7 @@
     color: var(--secondary-color);
   }
 
-  h2 {
+  h3 {
     color: var(--secondary-color);
   }
   
