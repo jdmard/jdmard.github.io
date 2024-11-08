@@ -63,6 +63,12 @@
     max-width: 600px;
     justify-content: left;
   }
+
+  .column-right {
+    max-width: 600px;
+    justify-content: right;
+    text-align: right;
+  }
   
   .italics {
     font-style: italic;
