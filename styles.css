@@ -80,4 +80,11 @@
     font-size: 1.1em;
     color: var(--secondary-color);
   }
+
+  p.italics {
+    font-style: italic;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 0.5em;
+  }
   
