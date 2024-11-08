@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #4e4e71;
+    --secondary-color: #d3b8c3;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: var(--primary-color);
   }
   
   nav {
@@ -16,8 +21,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
   }
   
   nav .name {
@@ -26,14 +31,17 @@
   }
   
   nav .nav-items a {
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
     margin-left: 1em;
     font-size: 1em;
+    transition: color 0.3s ease;
   }
   
   nav .nav-items a:hover {
     text-decoration: underline;
+    font-size: 1.1em;
+    filter: brightness(0.8);
   }
   
   .Intro {
@@ -54,18 +62,18 @@
   
   .italics {
     font-style: italic;
-    color: #007acc;
+    color: var(--secondary-color);
     margin-bottom: 0.5em;
   }
   
   p {
     font-size: 1em;
-    color: #333;
+    color: var(--secondary-color);
   }
   
   p.emphasis {
     font-weight: bold;
     font-size: 1.1em;
-    color: #007acc;
+    color: var(--secondary-color);
   }
   
