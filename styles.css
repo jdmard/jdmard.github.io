@@ -119,4 +119,10 @@
   h3 {
     color: var(--secondary-color);
   }
+
+  a {
+    color: var(--secondary-color);
+    font-style: bold;
+    text-decoration: underline;
+  }
   
