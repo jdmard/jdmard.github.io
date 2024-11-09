@@ -105,11 +105,11 @@
     margin-right: 0.5rem;
     color: var(--secondary-color);
   }
-
-  .dashed-list li::after {
+  
+  .dashed-list li {
     color: var(--secondary-color);
   }
-
+  
   h1 {
     color: var(--secondary-color);
   }
