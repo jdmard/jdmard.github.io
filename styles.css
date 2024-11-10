@@ -14,6 +14,7 @@
     line-height: 1.6;
     color: #333;
     background-color: var(--primary-color);
+    place-items: center;
   }
   
   nav {
@@ -71,6 +72,7 @@
     justify-content: right;
     text-align: right;
   }
+
   
   .italics {
     font-style: italic;
@@ -125,4 +127,47 @@
     font-style: bold;
     text-decoration: underline;
   }
+
+  /*For cool image display*/
+  .track-wrapper {
+    width: 80%;
+    max-inline-size: var(--size-content-3);
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg,
+                  transparent 0,
+                  black 15% 85%,
+                  transparent
+                ) 0 50% / 100% calc(100% - (2 * var(--size-4))) no-repeat,
+                linear-gradient(0deg, black, black) 50% 0 / 100% var(--size-4) no-repeat,
+                linear-gradient(0deg, black, black) 50% 100% / 100% var(--size-4) no-repeat;
+  }
+
   
+img {
+	height: 100%;
+	width: 100%;
+}
+
+.track {
+	--size: clamp(200px, 40vmin, 50rem);
+	height: var(--size);
+	width: 100%;
+	display: flex;
+	overflow: overlay;
+	gap: var(--size-4);
+	list-style-type: none;
+  margin: 0;
+	padding: var(--size-4) 33%;
+	scroll-snap-type: x mandatory;
+	-webkit-mask: radial-gradient(#0000 0 30%, #000 30.5%) 50% calc(var(--size) * 0.5) / 300% 100%,
+								linear-gradient(0deg, black, black) 50% 0 / 100% var(--size-4) no-repeat,
+								linear-gradient(0deg, black, black) 50% 100% / 100% var(--size-4) no-repeat;
+
+}
+
+.track__item {
+	height: 100%;
+	aspect-ratio: 1;
+	background: hsl(0 80% 50% / 1);
+	scroll-snap-align: center;
+}
